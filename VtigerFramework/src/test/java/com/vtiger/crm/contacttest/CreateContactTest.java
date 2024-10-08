@@ -94,7 +94,7 @@ public class CreateContactTest extends BaseClass {
 		cnp.contactOrg(contactname, phoneno);
 		cnp.dateField(startDate, endDate);
 		cnp.saveButton();
-		//cnp.getSavebtn().click();
+		///cnp.getSavebtn().click();
 		///*Verify the contact with phone no
 		ContactInfoPage cin=new ContactInfoPage(driver);
 		cin.verifyContactName(contactname);
