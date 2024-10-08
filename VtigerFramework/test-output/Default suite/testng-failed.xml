@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.crm.contacttest.CreateContactWithOrgName">
+      <class name="com.vtiger.crm.oppurtunitytest.CreateOppurtunityWithOrganization">
         <methods>
           <include name="conficAC"/>
           <include name="conficAS"/>
           <include name="configBs"/>
-          <include name="CreateContactWithOrgName"/>
+          <include name="createOppurtunity"/>
           <include name="conficBM"/>
           <include name="conficBC"/>
           <include name="conficAM"/>
         </methods>
-      </class> <!-- com.vtiger.crm.contacttest.CreateContactWithOrgName -->
+      </class> <!-- com.vtiger.crm.oppurtunitytest.CreateOppurtunityWithOrganization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

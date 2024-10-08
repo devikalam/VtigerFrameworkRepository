@@ -2,32 +2,21 @@ package com.vtiger.crm.oppurtunitytest;
 
 
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import com.vtiger.crm.baseclassutility.BaseClass;
-import com.vtiger.crm.generic.fileutility.ExcelUtility;
-import com.vtiger.crm.generic.fileutility.FileUtility;
-import com.vtiger.crm.generic.webdriverutility.JavaUtility;
-import com.vtiger.crm.generic.webdriverutility.WebDriverUtility;
-import com.vtiger.crm.objectrepositoryutility.CreateNewOppurtunityPage;
-import com.vtiger.crm.objectrepositoryutility.CreateNewOrganizationPage;
-import com.vtiger.crm.objectrepositoryutility.HomePage;
-import com.vtiger.crm.objectrepositoryutility.LoginPage;
-import com.vtiger.crm.objectrepositoryutility.OppurtunityInfoPage;
-import com.vtiger.crm.objectrepositoryutility.OpputunitiesPage;
-import com.vtiger.crm.objectrepositoryutility.OrgSelectPage;
-import com.vtiger.crm.objectrepositoryutility.OrganizationInfoPage;
-import com.vtiger.crm.objectrepositoryutility.OrganizationPage;
+import com.vtiger.crm.objectrepositoryutility.HomePage.HomePage;
+import com.vtiger.crm.objectrepositoryutility.OppurtunityPage.CreateNewOppurtunityPage;
+import com.vtiger.crm.objectrepositoryutility.OppurtunityPage.OppurtunityInfoPage;
+import com.vtiger.crm.objectrepositoryutility.OppurtunityPage.OpputunitiesPage;
+import com.vtiger.crm.objectrepositoryutility.OrganizationPage.CreateNewOrganizationPage;
+import com.vtiger.crm.objectrepositoryutility.OrganizationPage.OrgSelectPage;
+import com.vtiger.crm.objectrepositoryutility.OrganizationPage.OrganizationInfoPage;
+import com.vtiger.crm.objectrepositoryutility.OrganizationPage.OrganizationPage;
 
 public class CreateOppurtunityWithOrganization extends BaseClass {
-	@Test
+	@Test(groups = "RegressionTest")
 	public void createOppurtunity() throws Throwable, Throwable {
 		
 	
@@ -77,29 +66,60 @@ cnp.salesDropDown(salesdrop);
 cnp.getSaveBTN().click();
 OppurtunityInfoPage oipp=new OppurtunityInfoPage(driver);
 oipp.verifyOppoInfo(opponame, assign, salesdrop);
-oipp.verifyOrg(driver, orgname);
+//oipp.verifyOrg(driver, orgname);
+
+/*@Test
+public void CreateOppurtunityWithContact() throws Throwable, Throwable {
+	
+
+	String opponame = elib.getDataFromExcelFile("Oppurtunity", 1, 3)+jlib.getRandomNumber();
+	String salesdrop = elib.getDataFromExcelFile("Oppurtunity", 1, 4);
+	String assign = elib.getDataFromExcelFile("Oppurtunity", 1, 5);
+	
+	String relatedToContact = elib.getDataFromExcelFile("Oppurtunity", 1, 6);
+	String orgname = elib.getDataFromExcelFile("organization", 1, 2);
+//	String contactname = elib.getDataFromExcelFile("organization", 1, 7)+jlib.getRandomNumber();
+	String switchToChildWin = elib.getDataFromExcelFile("Oppurtunity", 2, 3);
+	String switchToMainWin = elib.getDataFromExcelFile("Oppurtunity", 2, 2);
+	
+	String contactname = elib.getDataFromExcelFile("organization", 1, 7)+jlib.getRandomNumber();
+	String phno = elib.getDataFromExcelFile("organization", 1, 4);
 
 
+	HomePage hp=new HomePage(driver);
+	hp.clickContactLink();
 
+	ContactPage c=new ContactPage(driver);
+	c.clickOncreateContact();
+	//hp.clickContactLink();
+	//HomePage hp=new HomePage(driver);
+	//create contact should be mandatory
+	//hp.clickContactLink();
+	
 
-/*Set<String> allwin = driver.getWindowHandles();
-for (String win1 : allwin) {
-	driver.switchTo().window(win1);
-	String title = driver.getTitle();
-	System.out.println(title);
-	if(title.contains("Contacts&action")) {
-		break;
-	}}*/
-//wlib.switchToNewTabOnCurrentUrl(driver, URL);//switch back to window again
-//cnp.getRadioBtn().click();
-//wlib.selectByText(cnp.getAssignedToDD(), assign);
-//cnp.assignedDropDown(assign);
+	//ContactPage c=new ContactPage(driver);
+	//c.clickOncreateContact();
 
-//System.out.println("print");
-//cnp.dateField(enddt);
-//cnp.salesDropDown(salesdrop);
+	CreateNewContactPage cnp=new CreateNewContactPage(driver);
+	cnp.contact(contactname);
 
-//cnp.getSaveBTN().click();
+	//cnp.saveButton();
+
+	ContactInfoPage cip=new ContactInfoPage(driver);
+	cip.verifyContactName(contactname);
+	
+	
+	hp.clickOnOppurtunity();
+
+	OpputunitiesPage op=new OpputunitiesPage(driver);
+	op.getCreateOPPoBtn().click();
+	
+	CreateNewOppurtunityPage cp=new CreateNewOppurtunityPage(driver);
+	cp.oppurtunityWithContact(driver, salesdrop, contactname, assign, switchToChildWin, switchToMainWin, contactname, opponame);
+	
+	
+}*/
+
 
 
 

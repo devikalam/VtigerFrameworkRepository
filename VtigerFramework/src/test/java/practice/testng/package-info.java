@@ -1,1 +1,0 @@
-package practice.testng;

@@ -2,12 +2,12 @@ package com.vtiger.crm.vendortest;
 import org.testng.annotations.Test;
 
 import com.vtiger.crm.baseclassutility.BaseClass;
-import com.vtiger.crm.objectrepositoryutility.CreateVendorPage;
-import com.vtiger.crm.objectrepositoryutility.HomePage;
-import com.vtiger.crm.objectrepositoryutility.PurchaseOrderInformationPage;
-import com.vtiger.crm.objectrepositoryutility.PurchaseOrderPage;
-import com.vtiger.crm.objectrepositoryutility.PurchaseOrderVerifyPage;
-import com.vtiger.crm.objectrepositoryutility.VendorInfoPage;
+import com.vtiger.crm.objectrepositoryutility.HomePage.HomePage;
+import com.vtiger.crm.objectrepositoryutility.VendorPage.CreateVendorPage;
+import com.vtiger.crm.objectrepositoryutility.VendorPage.PurchaseOrderInformationPage;
+import com.vtiger.crm.objectrepositoryutility.VendorPage.PurchaseOrderPage;
+import com.vtiger.crm.objectrepositoryutility.VendorPage.PurchaseOrderVerifyPage;
+import com.vtiger.crm.objectrepositoryutility.VendorPage.VendorInfoPage;
 
 public class CreateVendorTest extends BaseClass {
 	@Test(groups = "smokeTest")

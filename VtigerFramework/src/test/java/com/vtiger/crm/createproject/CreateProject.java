@@ -1,39 +1,15 @@
 package com.vtiger.crm.createproject;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Properties;
-import java.util.Random;
-
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.vtiger.crm.baseclassutility.BaseClass;
 import com.vtiger.crm.generic.fileutility.ExcelUtility;
-import com.vtiger.crm.generic.fileutility.FileUtility;
-import com.vtiger.crm.generic.webdriverutility.JavaUtility;
-import com.vtiger.crm.generic.webdriverutility.WebDriverUtility;
-import com.vtiger.crm.objectrepositoryutility.CreateProjectPage;
-import com.vtiger.crm.objectrepositoryutility.HomePage;
-import com.vtiger.crm.objectrepositoryutility.LoginPage;
-import com.vtiger.crm.objectrepositoryutility.ProjectInfoPage;
+import com.vtiger.crm.objectrepositoryutility.HomePage.HomePage;
+import com.vtiger.crm.objectrepositoryutility.ProjectPage.CreateProjectPage;
+import com.vtiger.crm.objectrepositoryutility.ProjectPage.ProjectInfoPage;
 
 public class CreateProject extends BaseClass{
-	@Test
+	@Test(groups = "SmokeTest")
 	public void createProject() throws Throwable, Throwable {
 
 		//read test script data from excel
@@ -56,21 +32,6 @@ public class CreateProject extends BaseClass{
 		ProjectInfoPage pi=new ProjectInfoPage(driver);
 		pi.verifyheaderinfo(projname);
 		pi.verifyProjectinfo(projname);
-		/*String header = pi.getProjectHeadetText().getText();
-	String proName = pi.getProjectNameVerification().getText();
-	if(proName.contains(projname)) {
-		System.out.println(projname+" is created==pass");
-	}
-	else {
-		System.out.println(projname+"is not created==Fail");
-	}
-
-	if(header.contains(projname)) {
-		System.out.println(projname+" is created==pass");
-	}
-	else {
-		System.out.println(projname+"is not created==Fail");
-	}*/
 
 
 
