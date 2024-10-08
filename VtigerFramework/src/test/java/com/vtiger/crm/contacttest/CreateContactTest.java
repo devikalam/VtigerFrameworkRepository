@@ -44,7 +44,7 @@ public class CreateContactTest extends BaseClass {
 	}*/
 	@Test(groups = "RegressionTest")
 	public void createContactWithOrganization() throws Throwable, Throwable {
-		//read test script data from excel
+		///read test script data from excel
 		String contactname = elib.getDataFromExcelFile("organization", 1, 7)+jlib.getRandomNumber();
 		String switchToChildWin = elib.getDataFromExcelFile("organization", 1, 10);
 		String switchToMainWin = elib.getDataFromExcelFile("organization", 1, 9);

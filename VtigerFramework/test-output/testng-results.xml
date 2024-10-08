@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-07T16:34:28 IST" name="Suite" finished-at="2024-10-07T16:34:58 IST" duration-ms="29898">
+  <suite started-at="2024-10-08T11:22:29 IST" name="Default suite" finished-at="2024-10-08T11:23:24 IST" duration-ms="54860">
     <groups>
       <group name="SmokeTest">
-        <method signature="CreateOrganizationTest.CreateOrgTest()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" name="CreateOrgTest" class="com.vtiger.crm.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.CreateOrgTest()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" name="CreateOrgTest" class="com.vtiger.crm.orgtest.CreateOrganizationTest"/>
       </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="CreateOrganizationTest.CreateOrganizationWithIndustryType()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" name="CreateOrganizationWithIndustryType" class="com.vtiger.crm.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.CreateOrganizationwithPhoneNo()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" name="CreateOrganizationwithPhoneNo" class="com.vtiger.crm.orgtest.CreateOrganizationTest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2024-10-07T16:34:28 IST" name="Test" finished-at="2024-10-07T16:34:58 IST" duration-ms="29898">
+    <test started-at="2024-10-08T11:22:29 IST" name="Default test" finished-at="2024-10-08T11:23:24 IST" duration-ms="54860">
       <class name="com.vtiger.crm.orgtest.CreateOrganizationTest">
-        <test-method is-config="true" signature="configBs()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:28 IST" name="configBs" finished-at="2024-10-07T16:34:28 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="configBs()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:29 IST" name="configBs" finished-at="2024-10-08T11:22:29 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBs -->
-        <test-method is-config="true" signature="conficBC()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:28 IST" name="conficBC" finished-at="2024-10-07T16:34:32 IST" duration-ms="4627" status="PASS">
+        <test-method is-config="true" signature="conficBC()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:29 IST" name="conficBC" finished-at="2024-10-08T11:22:33 IST" duration-ms="3558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBC -->
-        <test-method is-config="true" signature="conficBM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:32 IST" name="conficBM" finished-at="2024-10-07T16:34:39 IST" duration-ms="6819" status="PASS">
+        <test-method is-config="true" signature="conficBM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:33 IST" name="conficBM" finished-at="2024-10-08T11:22:37 IST" duration-ms="4280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBM -->
-        <test-method signature="CreateOrgTest()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:39 IST" name="CreateOrgTest" finished-at="2024-10-07T16:34:54 IST" duration-ms="14549" status="PASS">
+        <test-method signature="CreateOrgTest()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:37 IST" name="CreateOrgTest" finished-at="2024-10-08T11:22:49 IST" duration-ms="11427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateOrgTest -->
-        <test-method is-config="true" signature="conficAM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:54 IST" name="conficAM" finished-at="2024-10-07T16:34:56 IST" duration-ms="2452" status="PASS">
+        <test-method is-config="true" signature="conficAM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:49 IST" name="conficAM" finished-at="2024-10-08T11:22:51 IST" duration-ms="1972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficAM -->
-        <test-method is-config="true" signature="conficAC()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:56 IST" name="conficAC" finished-at="2024-10-07T16:34:58 IST" duration-ms="1427" status="PASS">
+        <test-method is-config="true" signature="conficBM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:51 IST" name="conficBM" finished-at="2024-10-08T11:22:54 IST" duration-ms="3246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conficBM -->
+        <test-method signature="CreateOrganizationWithIndustryType()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:22:54 IST" name="CreateOrganizationWithIndustryType" finished-at="2024-10-08T11:23:04 IST" duration-ms="10666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganizationWithIndustryType -->
+        <test-method is-config="true" signature="conficAM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:23:04 IST" name="conficAM" finished-at="2024-10-08T11:23:06 IST" duration-ms="1996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conficAM -->
+        <test-method is-config="true" signature="conficBM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:23:06 IST" name="conficBM" finished-at="2024-10-08T11:23:10 IST" duration-ms="3491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conficBM -->
+        <test-method signature="CreateOrganizationwithPhoneNo()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:23:10 IST" name="CreateOrganizationwithPhoneNo" finished-at="2024-10-08T11:23:21 IST" duration-ms="11064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganizationwithPhoneNo -->
+        <test-method is-config="true" signature="conficAM()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:23:21 IST" name="conficAM" finished-at="2024-10-08T11:23:23 IST" duration-ms="1551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conficAM -->
+        <test-method is-config="true" signature="conficAC()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:23:23 IST" name="conficAC" finished-at="2024-10-08T11:23:24 IST" duration-ms="1533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficAC -->
-        <test-method is-config="true" signature="conficAS()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@6a6cb05c]" started-at="2024-10-07T16:34:58 IST" name="conficAS" finished-at="2024-10-07T16:34:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="conficAS()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrganizationTest@3c46e67a]" started-at="2024-10-08T11:23:24 IST" name="conficAS" finished-at="2024-10-08T11:23:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficAS -->
       </class> <!-- com.vtiger.crm.orgtest.CreateOrganizationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
