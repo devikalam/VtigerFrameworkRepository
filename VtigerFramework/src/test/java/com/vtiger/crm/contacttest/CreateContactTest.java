@@ -54,7 +54,7 @@ public class CreateContactTest extends BaseClass {
 
 		HomePage hp=new HomePage(driver);
 		hp.orgLink();
-		//hp.getOrganizationLink().click();
+		///hp.getOrganizationLink().click();
 		OrganizationPage op=new OrganizationPage(driver);
 		op.createOrgLink();
 		CreateNewOrganizationPage cop=new CreateNewOrganizationPage(driver);
