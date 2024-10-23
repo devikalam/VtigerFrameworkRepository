@@ -16,17 +16,4 @@ int limitCount=5;
 		return false;
 	}
 
-	/*int count=0;
-	int limit=3;
-	public boolean retry(ITestResult res) {
-		
-		if(count<limit) {
-			count++;
-			return true;
-			
-		}
-		return false;
-		
-	}*/
-
 }

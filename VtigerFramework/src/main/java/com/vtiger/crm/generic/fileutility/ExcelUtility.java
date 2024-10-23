@@ -56,10 +56,10 @@ public int getCellCount(String sheetName) throws Throwable, Throwable {
 		FileInputStream fis=new FileInputStream("./testscriptdata/TestdataExcel.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.createSheet(sheetname);
-		for(int i=0;i<
-				data.length;i++) {
+		for(int i=0;i<data.length;i++) {
 			Row row = sh.createRow(i);
 			for(int j=0;j<=data[i].length;j++) {
+				
 				 row.createCell(j).setCellValue(data[i][j].toString());
 			}
 		}

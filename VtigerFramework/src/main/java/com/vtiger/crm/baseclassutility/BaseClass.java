@@ -74,6 +74,7 @@ public class BaseClass {
 	
 	@BeforeMethod(groups = {"SmokeTest","RegressionTest"})
 	public void conficBM() throws Throwable {
+		
 		//String URL=System.getProperty("url");
 		//String USERNAME=System.getProperty("username");
 		//String PASSWORD=System.getProperty("password");
