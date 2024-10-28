@@ -106,7 +106,7 @@ public class CreateProject extends BaseClass{
 	}else {
 		System.out.println(enddate+" is created==pass");
 		}*/
-		System.out.println("printed");
+		
 	}
 
 }
