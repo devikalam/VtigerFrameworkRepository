@@ -176,6 +176,11 @@ public class WebDriverUtility {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollTo(0,document.body.scrollHeight)","");
 	}
+	public void clickUsingJS(WebDriver driver,WebElement ele) {
+		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].click();", ele);
+		
+	}
 
 	//TakeScreen shot
 	public String takingScreenshot(WebDriver driver, String screenshotName) {
